@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--    Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewpoint"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--    Boostrap CSS-->
+    <link rel="stylesheet"  href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <!--    flask_app CSS-->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+    <title>Hello, Flask_app</title>
+</head>
+<body>
+    <!--    기본 템플릿에 삽입할 내용 Start-->
+    {% block content %}
+    {% endblock %}
+    <!--    기본 템플릿에 삽입할 내용 end-->
+</body>
+</html>
